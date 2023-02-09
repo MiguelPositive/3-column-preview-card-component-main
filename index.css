@@ -91,3 +91,130 @@ h2 {
     cursor: pointer;
   }
 }
+
+@media (max-width: 1366px) {
+  h2 {
+    font-size: calc(1em + 1vw);
+  }
+  p {
+    font-size: calc(0.6em + 0.6vw);
+
+    height: calc(5em + 5vw);
+    margin-bottom: calc(3em + 3vw);
+
+    line-height: calc(0.8em + 0.8vw);
+  }
+}
+
+@media (max-width: 1100px) {
+  .col {
+    padding: calc(1.5em + 1.5vw);
+  }
+}
+
+@media (max-width: 1000px) {
+  main {
+    margin-left: calc(4em + 4vw);
+    margin-right: calc(4em + 4vw);
+  }
+
+  p {
+    line-height: calc(0.9em + 0.9vw);
+  }
+}
+
+@media (max-width: 900px) {
+  main {
+    margin-left: calc(3.5em + 3.5vw);
+    margin-right: calc(3.5em + 3.5vw);
+  }
+
+  .more {
+    height: calc(1.7em + 1.7vw);
+
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 800px) {
+  main {
+    margin-left: calc(2.5em + 2.5vw);
+    margin-right: calc(2.5em + 2.5vw);
+  }
+
+  p {
+    line-height: calc(1em + 1vw);
+    margin-bottom: calc(5em + 5vw);
+  }
+
+  .more {
+    height: calc(1.5em + 1.5vw);
+  }
+}
+
+@media (max-width: 700px) {
+  main {
+    margin-left: calc(2em + 2vw);
+    margin-right: calc(2em + 2vw);
+  }
+
+  .col {
+    padding: calc(1.3em + 1.3vw);
+  }
+
+  .more {
+    height: calc(1.5em + 1.5vw);
+  }
+}
+
+@media (max-width: 600px) {
+  p {
+    margin-bottom: calc(8em + 8vw);
+  }
+  .more {
+    font-size: calc(0.6em + 0.6vw);
+  }
+}
+
+@media (max-width: 501px) {
+  main {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+
+    margin-top: calc(1.5em + 1.5vw);
+    margin-bottom: calc(1.5em + 1.5vw);
+
+    margin-left: calc(1.2em + 1.2vw);
+    margin-right: calc(1.2em + 1.2vw);
+
+    font-size: calc(1.4em + 1.4vw);
+  }
+
+  p {
+    height: calc(3em + 3vw);
+  }
+
+  .more {
+    background-color: white;
+    font-weight: bold;
+    font-size: calc(0.5em + 0.5vw);
+
+    text-align: center;
+
+    width: calc(7em + 7vw);
+    height: calc(2em + 2vw);
+    padding: calc(0.5em + 0.5vw);
+  }
+
+  .more-1 {
+    color: #e28525;
+  }
+
+  .more-2 {
+    color: #016972;
+  }
+
+  .more-3 {
+    color: #00403f;
+  }
+}
