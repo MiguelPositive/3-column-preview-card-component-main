@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "Lexend";
+  src: url("./fonts/LexendDeca-ExtraLight.ttf");
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Big";
+  src: url("./fonts/BigShouldersDisplay-SemiBold.ttf");
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Lexend";
+}
+
+body {
+  margin: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  overflow: hidden;
+  color: white;
+
+  margin-left: calc(5em + 5vw);
+  margin-right: calc(5em + 5vw);
+  border-radius: calc(0.3em + 0.3vw);
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+}
+
+h2 {
+  font-family: "Big";
+  text-transform: uppercase;
+}
+
+.col {
+  padding: calc(2em + 2vw);
+}
+
+.col-1 {
+  background-color: #e28525;
+}
+
+.col-2 {
+  background-color: #016972;
+}
+
+.col-3 {
+  background-color: #00403f;
+}
+
+.more {
+  width: 50%;
+  border-radius: calc(1.2em + 1.2vw);
+  border: 2px solid white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1440px) {
+  h2 {
+    font-size: calc(1.2em + 1.2vw);
+  }
+  p {
+    font-size: calc(0.7em + 0.7vw);
+    opacity: 0.8;
+
+    height: calc(5em + 5vw);
+    margin-bottom: calc(3em + 3vw);
+
+    line-height: calc(0.9em + 0.9vw);
+  }
+
+  .more {
+    width: calc(5em + 5vw);
+    height: calc(2em + 2vw);
+
+    cursor: pointer;
+  }
+}
